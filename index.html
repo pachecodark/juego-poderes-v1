@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Digimon 🎮</title>
+    <link rel="stylesheet" href="./css/styles.css" type="text/css">
+</head>
+<body>
+    <section id="seleccionar-digimon">
+        
+        <h1 class="titulo">Juego de Poderes</h1>
+
+        <h2 class="subtitulo">Elige a tu monstruo:</h2>
+
+        <div class="tarjetas"> 
+            <input type="radio" name="mascota" id="emymon">
+            <label class="tarjeta-digimon" for="emymon">
+                <p>Emymon</p>  
+                <img src="./img/emymon.webp" alt="Emymon"> 
+            </label>
+            
+            <input type="radio" name="mascota" id="shangamon">
+            <label class="tarjeta-digimon" for="shangamon">
+                <p>Shangamon</p>
+                <img src="./img/shangamon.png" alt="Shangamon"> 
+            </label>
+            
+            <input type="radio" name="mascota" id="viramon">
+            <label class="tarjeta-digimon" for="viramon">
+                <p>Viramon</p>
+                <img src="./img/viramon.webp" alt="Viramon"> 
+            </label>
+        </div>
+        <p>
+            <button id="btn-digimon">Seleccionar</button>
+        </p>
+        
+        <!-- NOTA: 
+        El atributo for='', nos ayuda a vincular un label con un input.
+        -->
+    </section>
+
+    <section id="seleccionar-ataque">
+        
+        <h1 class="titulo">Juego de Poderes</h1>
+
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+
+        <div class="botones">
+            <button id="btn-fire" class="botones-ataques">
+                <img src="./img/fuego.png" alt="Fuego">
+                Fuego
+            </button>
+            
+            <button id="btn-water" class="botones-ataques">
+                <img src="./img/agua.png" alt="Agua">
+                Agua
+            </button>
+            
+            <button id="btn-earth" class="botones-ataques">
+                <img src="./img/tierra.png" alt="Tierra">
+                Tierra
+            </button>
+            
+        </div>
+
+        <div id="mensajes">
+            <p id="resultado">Suerte!</p>
+
+            <section id="reiniciar">
+                <button id="btn-reiniciar">Reiniciar Juego</button>
+            </section>
+        </div>
+        <h2 class="subtitulo">Tabla de Resultados</h2>
+        <div class="ataques-digimon">
+            <div class="ataques-digimon-jugador">
+                <h3>Jugador</h3>
+                <p id="digimon-jugador"></p>
+                <h3>Vidas</h3>
+                <p id="vidas-jugador">3</p>
+                <h3>Ataques</h3>
+                <div id="ataques-jugador"></div>
+            </div>
+            <div class="ataques-digimon-enemigo">
+                <h3>Enemigo</h3>
+                <p id="digimon-enemigo"></p>
+                <h3>Vidas</h3>
+                <p id="vidas-enemigo">3</p>
+                <h3>Ataques</h3>
+                <div id="ataques-enemigo"></div>
+            </div>
+        </div>
+    </section>
+<!-- 
+    <section id="mensaje-final">
+    </section> -->
+
+    <script src="./js/js_mokepon.js"></script>
+</body>
+</html>

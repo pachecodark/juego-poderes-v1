@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geostar&display=swap');
+
+body{
+    /* background-image: url(./landscape/adventure\ dig.png);
+    background-size: cover; */
+    background-color: #FF7B54   ;
+    font-family: sans-serif;
+}
+
+.titulo{
+    color: black;
+    font-size: 35px;
+    font-family: 'Silkscreen', cursive;
+}
+
+.subtitulo{
+    color: black;
+    font-size: 25px;
+    font-family: 'Geostar', cursive;
+}
+
+#seleccionar-digimon{
+    /* height: 120vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.tarjetas{
+    display: flex;
+    gap: 25px;/* es como un margin me agrega un espaciado afuera pero en flexbox*/
+}
+
+.tarjeta-digimon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 130px;
+    background-color: #939B62;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid #FFB26B;
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.tarjeta-digimon img{
+    width: 100px;
+}
+
+.tarjeta-digimon:hover, #btn-digimon:hover, .botones-ataques:hover, #btn-reiniciar:hover{
+    transform: scale(1.09);
+}
+
+.tarjeta-digimon:active, #btn-digimon:active, .botones-ataques:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+}
+
+input{
+    display: none;
+}
+
+/* input:checked + label{ elementos hermanos
+    background-color: #b28f6e;
+} */
+
+#btn-digimon{
+    background-color: #FFD56F;
+    height: 50px;
+    width: 235px;
+    padding: 10px;
+    margin-top: 15px;
+    border: 3px solid #FFB26B;
+    border-radius: 30px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+    line-height: 25px;
+}
+
+/* #btn-digimon:hover{
+    transform: scale(1.05);
+}
+
+#btn-digimon:active{
+    transform: scale(0.95);
+} */
+
+#seleccionar-ataque{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones{
+    display: flex;
+}
+
+.botones-ataques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 50px;
+    background-color: #939B62;
+    border: 5px solid #FFB26B;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.botones-ataques img{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+
+#mensajes{
+    width: 450px;
+    background: #FFB26B;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 5px solid #939B62;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#btn-reiniciar{
+    border-radius: 20px;
+    border: none;
+    background-color: #FF7B54;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 10px;
+}
+
+/* .ataques-digimon{
+    display: grid;
+    grid-template-columns: 125px 125px;
+    background-color: #6B728E;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid #404258;
+    color: white;
+    font-family: 'Wallpoet', cursive; 
+    font-size: 15px;  
+    gap: 20px; 
+} */
+
+.ataques-digimon{
+    display: flex;
+    gap: 50px;
+}
+
+.ataques-digimon-jugador, .ataques-digimon-enemigo{
+    width: 130px;
+    /* padding: 5px; */
+    background-color: #FFB26B;
+    border-radius: 20px;
+    border: 2px solid #939B62;
+    color: black;
+    font-family: sans-serif; 
+    font-size: 17px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .ataques-digimon, .ataques-digimon-jugador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+@media (max-width: 360px){
+    .tarjetas{
+        flex-direction: column;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+}
