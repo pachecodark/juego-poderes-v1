@@ -51,7 +51,7 @@ function seleccionarDigimonJugador(){
         spanDigimonJugador.innerHTML = 'VIRAMON';
         seleccionarDigimonEnemigo()
     }else{
-        alert('Ups!❌ Debes seleccionar a un Digimon.');
+        alert('Ups!❌ Debes seleccionar a un Monstruo.');
         reiniciarJuego();/*si no selecciono mascota einicia la pagina*/
     }
     
@@ -168,10 +168,10 @@ function mostrarGanador(resultadoFinal){
 
 function revisarVidas(){
     if(vidasEnemigo == 0){
-        mostrarGanador('Eres un crack! 👌 El Digimon del jugador gana la Partida! 😉');
+        mostrarGanador('Eres un crack! 👌 El Monstruo del jugador gana la Partida! 😉');
         desabilitarBotones();
     }else if(vidasJugador == 0){
-        mostrarGanador('Ups! ❌El Digimon del jugador Pierde 😭');
+        mostrarGanador('Ups! ❌El Monstruo del jugador Pierde 😭');
         desabilitarBotones();
     }
 }
